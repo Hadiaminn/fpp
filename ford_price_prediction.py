@@ -28,7 +28,7 @@ transmission_mapping = {
 fuelType_mapping = {
    'Diesel':0, 'Electric':1, 'Hybrid':2, 'Other':3, 'Petrol':4}
 
-st.image('ford.jpg')
+st.image('ford.JPG')
 
 st.write("""
 # Ford Car Price Prediction App
