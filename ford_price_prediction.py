@@ -37,7 +37,7 @@ This app predicts the **Price** for a Ford car based on user input.
 st.sidebar.header('Select car features')
 
 def user_input_features():
-    st.write('### Select car features:')
+    st.write('### Car features selected:')
     
     model = st.sidebar.selectbox('Car Model', list(model_mapping.keys()))
     year = st.sidebar.selectbox('Year of Registration', list(year_mapping.keys()))
