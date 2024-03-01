@@ -62,6 +62,7 @@ df = user_input_features()
 #st.subheader('User Input Parameters')
 st.write(df)
 
+# --> This is the process if we want to use the scaled data #
 # Scale the input features using MinMaxScaler
 #scaler = MinMaxScaler()
 #scaled_features = scaler.fit_transform(pd.DataFrame(df))
