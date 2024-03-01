@@ -64,7 +64,7 @@ st.write(df)
 
 # Scale the input features using MinMaxScaler
 scaler = MinMaxScaler()
-scaled_features = scaler.fit_transform(df)
+scaled_features = scaler.fit_transform(pd.DataFrame(df))
 st.write(scaled_features)
 
 # Load the model
