@@ -69,7 +69,7 @@ scaled_features1 = pd.DataFrame(scaled_features, index=[0])
 st.write(scaled_features1)
 
 # Load the model
-loaded_model = pickle.load(open("ford_price_prediction_unscale_model.h5", "rb"))
+loaded_model = pickle.load(open("ford_price_prediction_model.h5", "rb"))
 
 # Make prediction
 prediction = loaded_model.predict(scaled_features)
