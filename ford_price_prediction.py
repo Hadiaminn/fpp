@@ -72,7 +72,7 @@ st.write(scaled_features1)
 loaded_model = pickle.load(open("ford_price_prediction_model.h5", "rb"))
 
 # Make prediction
-prediction = loaded_model.predict(scaled_features)
+prediction = loaded_model.predict(scaled_features1)
 
 st.subheader('Predicted Car Price')
 st.write('RM', round(prediction[0], 2))
