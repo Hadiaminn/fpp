@@ -34,7 +34,7 @@ st.write("""
 This app predicts the **Price** for a Ford car based on user input.
 """)
 
-st.sidebar.header('User Input Parameters')
+st.sidebar.header('Select car features')
 
 def user_input_features():
     st.write('### Select car features:')
@@ -59,8 +59,8 @@ def user_input_features():
 
 df = user_input_features()
 
-st.subheader('User Input Parameters')
-st.write(df)
+#st.subheader('User Input Parameters')
+#st.write(df)
 
 # Load the scaler
 scaler = MinMaxScaler()
