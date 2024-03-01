@@ -65,7 +65,8 @@ st.write(df)
 # Scale the input features using MinMaxScaler
 scaler = MinMaxScaler()
 scaled_features = scaler.fit_transform(pd.DataFrame(df))
-st.write(scaled_features)
+scaled_features1 = pd.DataFrame(scaled_features, index=[0])
+st.write(scaled_features1)
 
 # Load the model
 loaded_model = pickle.load(open("ford_price_prediction_unscale_model.h5", "rb"))
