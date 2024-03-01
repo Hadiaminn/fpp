@@ -42,7 +42,7 @@ def user_input_features():
     model = st.sidebar.selectbox('Car Model', list(model_mapping.keys()))
     year = st.sidebar.selectbox('Year of Registration', list(year_mapping.keys()))
     transmission = st.sidebar.selectbox('Transmission Type',list(transmission_mapping.keys()))
-    mileage = st.sidebar.slider('Mileage (in miles)', 100, 177644, 15000)
+    mileage = st.sidebar.slider('Mileage (in miles)', 1.0, 177644.0, 15.0)
     fuelType = st.sidebar.selectbox('Fuel Type', list(fuelType_mapping.keys()))
     engineSize = st.sidebar.slider('Engine Size (in liters)', 0.0, 5.0, 1.0)
 
